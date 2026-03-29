@@ -25,12 +25,19 @@
         </span>
       </a>
       <nav>
-        <a href="#hangulat">Hangulat</a>
-        <a href="#fogasok">Fogások</a>
-        <a href="#etlap">Étlap</a>
-        <a href="#kapcsolat">Kapcsolat</a>
+        <a href="#hangulat" data-i18n="nav.atmosphere">Hangulat</a>
+        <a href="#fogasok" data-i18n="nav.dishes">Kiemelt fogások</a>
+        <a href="#etlap" data-i18n="nav.menu">Étlap</a>
+        <a href="#kapcsolat" data-i18n="nav.contact">Kapcsolat</a>
       </nav>
-      <a class="cta" href="tel:+36613146736">Hívás</a>
+      <div class="nav-actions">
+        <div class="language-switcher" aria-label="Language switcher">
+          <button class="lang-btn active" type="button" data-lang="hu">🇭🇺 HU</button>
+          <span>|</span>
+          <button class="lang-btn" type="button" data-lang="en">🇬🇧 EN</button>
+        </div>
+        <a class="cta" href="tel:+36613146736" data-i18n="contact.cta1">Hívás most</a>
+      </div>
     </div>
   </header>
 
@@ -42,20 +49,21 @@
         <div class="hero-copy reveal">
           <div class="pill-row">
             <span class="pill">★ 4.7</span>
-            <span class="pill">1494 értékelés</span>
-            <span class="pill">Vietnámi étterem</span>
+            <span class="pill">1494</span>
+            <span class="pill" data-i18n="hero.info">Vietnámi étterem • Budapest • Nyitva minden nap</span>
           </div>
-          <p class="eyebrow">Autentikus vietnámi ízek · 1096 Budapest</p>
-          <h1>Modern, meleg, emlékezetes.<br>A Hanoi Xua már a képernyőn is meghozza az étvágyat.</h1>
-          <p class="lead">Gyors útvonal, átlátható étlap, erős food-vizuálok és egy hangulat, ami nem turistacsapda, hanem célpont.</p>
+          <p class="eyebrow" data-i18n="hero.eyebrow">Autentikus vietnámi ízek · 1096 Budapest</p>
+          <h1 data-i18n="hero.heading">Autentikus vietnámi ízek Budapest szívében</h1>
+          <p class="lead" data-i18n="hero.subheading">Friss alapanyagok, hagyományos receptek és modern hangulat egy helyen.</p>
           <div class="hero-actions">
-            <a class="button primary" href="https://maps.google.com/?q=Budapest%20Ern%C5%91%20utca%2030-34%201096" target="_blank" rel="noreferrer">Útvonal</a>
-            <a class="button secondary" href="#etlap">Étlap megnyitása</a>
+            <a class="button primary" href="tel:+36613146736" data-i18n="hero.ctaPrimary">Asztalfoglalás</a>
+            <a class="button secondary" href="#etlap" data-i18n="hero.ctaSecondary">Étlap megtekintése</a>
           </div>
+          <p class="hero-note" data-i18n="hero.info">Vietnámi étterem • Budapest • Nyitva minden nap</p>
           <div class="fact-grid">
-            <div><span>Cím</span><strong>Ernő utca 30-34</strong></div>
-            <div><span>Nyitvatartás</span><strong>H–V 11:00–21:30</strong></div>
-            <div><span>Árkategória</span><strong>4000–6000 Ft</strong></div>
+            <div><span data-i18n="contact.addressLabel">Cím</span><strong data-i18n="contact.addressValue">1096 Budapest, Ernő utca 30-34.</strong></div>
+            <div><span data-i18n="contact.hoursLabel">Nyitvatartás</span><strong data-i18n="contact.hoursValue">Minden nap 11:00 – 21:30</strong></div>
+            <div><span data-i18n="contact.phoneLabel">Telefon</span><strong>+36 61 314 6736</strong></div>
           </div>
         </div>
 
@@ -63,15 +71,15 @@
           <article class="feature-card feature-large">
             <img src="assets/padthai-close.jpg" alt="Pad thai közelről" />
             <div class="feature-copy">
-              <p class="mini">Kedvenc választás</p>
-              <h3>Pad thai & wok tészták</h3>
+              <p class="mini" data-i18n="hero.feature1Label">Kedvenc választás</p>
+              <h3 data-i18n="hero.feature1Title">Pad Thai</h3>
             </div>
           </article>
           <article class="feature-card feature-small">
             <img src="assets/dumplings.jpg" alt="Rákos gombóc mártogatóssal" />
             <div class="feature-copy">
-              <p class="mini">Előétel</p>
-              <h3>Gőzölt gombócok</h3>
+              <p class="mini" data-i18n="hero.feature2Label">Előétel</p>
+              <h3 data-i18n="hero.feature2Title">Friss falatok</h3>
             </div>
           </article>
         </aside>
@@ -80,8 +88,8 @@
 
     <section class="section" id="hangulat">
       <div class="wrap section-head reveal">
-        <p class="eyebrow">Tér és atmoszféra</p>
-        <h2>Nem csak étlap. Belépési vágy.</h2>
+        <p class="eyebrow" data-i18n="atmosphere.title">Hangulat</p>
+        <h2 data-i18n="atmosphere.subtitle">Fedezd fel éttermünk világát és a Hanoi Xua különleges atmoszféráját.</h2>
       </div>
       <div class="wrap story-grid">
         <div class="story-visual reveal">
@@ -89,13 +97,15 @@
           <img class="story-float" src="assets/coffee-table.jpg" alt="Vietnámi kávé és fogások az asztalon" />
         </div>
         <div class="story-copy reveal delay-1">
-          <p>A Hanoi Xua ereje az, hogy van saját arca. A lámpák, a fa bútorok, a fotófal és a természetes fény együtt egy olyan helyet építenek, ami már az első görgetésnél megjegyezhető.</p>
-          <p>Ez a demo direkt úgy lett összerakva, hogy a látogató ne csak információt kapjon, hanem azt érezze: ide el kell jönni ma vagy a hétvégén.</p>
+          <h3 data-i18n="about.title">Rólunk</h3>
+          <p data-i18n="about.p1">A Hanoi Xua a vietnámi konyha ízeit hozza el Budapestre egy modern, barátságos környezetben.</p>
+          <p data-i18n="about.p2">Ételeink friss alapanyagokból, autentikus receptek alapján készülnek, hogy minden tányér egy valódi élményt adjon.</p>
+          <p data-i18n="about.p3">Legyen szó egy gyors ebédről vagy egy nyugodt vacsoráról, nálunk a hagyományos ízek és a kellemes hangulat találkoznak.</p>
           <div class="tag-list">
-            <span>mobilbarát</span>
-            <span>gyors betöltés</span>
-            <span>étlap fókusz</span>
-            <span>1 koppintás hívás</span>
+            <span data-i18n="about.tag1">Friss alapanyagok</span>
+            <span data-i18n="about.tag2">Autentikus receptek</span>
+            <span data-i18n="about.tag3">Modern hangulat</span>
+            <span data-i18n="about.tag4">Vendégközpontú élmény</span>
           </div>
         </div>
       </div>
@@ -103,64 +113,64 @@
 
     <section class="section dark-section" id="fogasok">
       <div class="wrap section-head reveal">
-        <p class="eyebrow">Kiemelt fogások</p>
-        <h2>Olyan képek, amik helyetted dolgoznak.</h2>
+        <p class="eyebrow" data-i18n="dishes.title">Kiemelt fogások</p>
+        <h2 data-i18n="dishes.subtitle">Néhány kedvenc a Hanoi Xua kínálatából.</h2>
       </div>
       <div class="wrap dishes-grid">
         <article class="dish reveal tall">
           <img src="assets/spread.jpg" alt="Több fogás egy asztalon" />
-          <div class="overlay"><h3>Megosztós tálak</h3><p>Friss, színes, társaságra tervezve.</p></div>
+          <div class="overlay"><h3 data-i18n="dishes.card1Title">Pho leves</h3><p data-i18n="dishes.card1Text">Hosszan főzött, gazdag alaplé rizstésztával, friss zöldfűszerekkel és választható feltétekkel.</p></div>
         </article>
         <article class="dish reveal delay-1">
           <img src="assets/rice-bowl.jpg" alt="Színes rizses bowl" />
-          <div class="overlay"><h3>Wokos bowl</h3><p>Komfortos, mégis karakteres.</p></div>
+          <div class="overlay"><h3 data-i18n="dishes.card2Title">Pad Thai</h3><p data-i18n="dishes.card2Text">Klasszikus wokban pirított rizstészta kiegyensúlyozott, karakteres ízvilággal.</p></div>
         </article>
         <article class="dish reveal delay-2">
           <img src="assets/bun-cha.jpg" alt="Bun cha tál" />
-          <div class="overlay"><h3>Bún chả</h3><p>Friss zöldek, hús, savasság, balansz.</p></div>
+          <div class="overlay"><h3 data-i18n="dishes.card3Title">Bun Cha</h3><p data-i18n="dishes.card3Text">Vietnámi rizstészta grillezett hússal, friss zöldségekkel és aromás szósszal.</p></div>
         </article>
         <article class="dish reveal wide">
           <img src="assets/interior-night.jpg" alt="Hanoi Xua belső tér este" />
-          <div class="overlay"><h3>Esti hangulat</h3><p>Meleg fényekkel még erősebb az egész tér.</p></div>
+          <div class="overlay"><h3 data-i18n="dishes.card4Title">Előételek</h3><p data-i18n="dishes.card4Text">Könnyed, friss és ízekben gazdag fogások a tökéletes kezdéshez.</p></div>
         </article>
       </div>
     </section>
 
     <section class="section" id="etlap">
       <div class="wrap section-head reveal">
-        <p class="eyebrow">Étlap</p>
-        <h2>Rendes menü, tiszta kategóriákkal.</h2>
-        <p class="sub">Itt már minden kártya valódi menüoldal. Kattints a nagy nézethez.</p>
+        <p class="eyebrow" data-i18n="menu.title">Étlap</p>
+        <h2 data-i18n="menu.subtitle">Válogatás étlapunkból, a levesektől a wok fogásokig.</h2>
+        <p class="sub" data-i18n="menu.helper">Kattints a képekre a nagyobb nézethez.</p>
       </div>
       <div class="wrap menu-grid">
-        <button class="menu-tile reveal" data-title="Borító" data-img="assets/menu-cover.jpg"><img src="assets/menu-cover.jpg" alt="Étlap borító"><span>Borító</span></button>
-        <button class="menu-tile reveal delay-1" data-title="Előételek" data-img="assets/menu-starters.jpg"><img src="assets/menu-starters.jpg" alt="Előételek"><span>Előételek</span></button>
-        <button class="menu-tile reveal delay-2" data-title="Pho és bun levesek" data-img="assets/menu-soups.jpg"><img src="assets/menu-soups.jpg" alt="Levesek"><span>Levesek</span></button>
-        <button class="menu-tile reveal" data-title="Wok tészták I." data-img="assets/menu-noodles-1.jpg"><img src="assets/menu-noodles-1.jpg" alt="Wok tészták 1"><span>Wok tészták I.</span></button>
-        <button class="menu-tile reveal delay-1" data-title="Wok tészták II." data-img="assets/menu-noodles-2.jpg"><img src="assets/menu-noodles-2.jpg" alt="Wok tészták 2"><span>Wok tészták II.</span></button>
-        <button class="menu-tile reveal delay-2" data-title="Padthai és bun tészták" data-img="assets/menu-padthai-bun.jpg"><img src="assets/menu-padthai-bun.jpg" alt="Padthai és bun"><span>Padthai & bun</span></button>
-        <button class="menu-tile reveal" data-title="Főételek I." data-img="assets/menu-mains-1.jpg"><img src="assets/menu-mains-1.jpg" alt="Főételek 1"><span>Főételek I.</span></button>
-        <button class="menu-tile reveal delay-1" data-title="Főételek II." data-img="assets/menu-mains-2.jpg"><img src="assets/menu-mains-2.jpg" alt="Főételek 2"><span>Főételek II.</span></button>
-        <button class="menu-tile reveal delay-2" data-title="Thai specialitások" data-img="assets/menu-thai.jpg"><img src="assets/menu-thai.jpg" alt="Thai specialitások"><span>Thai specialitások</span></button>
-        <button class="menu-tile reveal" data-title="Vegetáriánus és desszert" data-img="assets/menu-veg-dessert.jpg"><img src="assets/menu-veg-dessert.jpg" alt="Vegetáriánus és desszert"><span>Vegán & desszert</span></button>
-        <button class="menu-tile reveal delay-1" data-title="Italok" data-img="assets/menu-drinks.jpg"><img src="assets/menu-drinks.jpg" alt="Italok"><span>Italok</span></button>
+        <button class="menu-tile reveal" data-menu-key="menu.categories.cover" data-img="assets/menu-cover.jpg"><img src="assets/menu-cover.jpg" alt="Étlap borító"><span data-i18n="menu.categories.cover">Borító</span></button>
+        <button class="menu-tile reveal delay-1" data-menu-key="menu.categories.starters" data-img="assets/menu-starters.jpg"><img src="assets/menu-starters.jpg" alt="Előételek"><span data-i18n="menu.categories.starters">Előételek</span></button>
+        <button class="menu-tile reveal delay-2" data-menu-key="menu.categories.soups" data-img="assets/menu-soups.jpg"><img src="assets/menu-soups.jpg" alt="Levesek"><span data-i18n="menu.categories.soups">Levesek</span></button>
+        <button class="menu-tile reveal" data-menu-key="menu.categories.wok1" data-img="assets/menu-noodles-1.jpg"><img src="assets/menu-noodles-1.jpg" alt="Wok tészták 1"><span data-i18n="menu.categories.wok1">Wok tészták I.</span></button>
+        <button class="menu-tile reveal delay-1" data-menu-key="menu.categories.wok2" data-img="assets/menu-noodles-2.jpg"><img src="assets/menu-noodles-2.jpg" alt="Wok tészták 2"><span data-i18n="menu.categories.wok2">Wok tészták II.</span></button>
+        <button class="menu-tile reveal delay-2" data-menu-key="menu.categories.main1" data-img="assets/menu-mains-1.jpg"><img src="assets/menu-mains-1.jpg" alt="Főételek 1"><span data-i18n="menu.categories.main1">Főételek I.</span></button>
+        <button class="menu-tile reveal" data-menu-key="menu.categories.main2" data-img="assets/menu-mains-2.jpg"><img src="assets/menu-mains-2.jpg" alt="Főételek 2"><span data-i18n="menu.categories.main2">Főételek II.</span></button>
+        <button class="menu-tile reveal delay-1" data-menu-key="menu.categories.thai" data-img="assets/menu-thai.jpg"><img src="assets/menu-thai.jpg" alt="Thai specialitások"><span data-i18n="menu.categories.thai">Thai specialitások</span></button>
+        <button class="menu-tile reveal delay-2" data-menu-key="menu.categories.vegetarianDesserts" data-img="assets/menu-veg-dessert.jpg"><img src="assets/menu-veg-dessert.jpg" alt="Vegetáriánus és desszertek"><span data-i18n="menu.categories.vegetarianDesserts">Vegetáriánus és desszertek</span></button>
+        <button class="menu-tile reveal" data-menu-key="menu.categories.drinks" data-img="assets/menu-drinks.jpg"><img src="assets/menu-drinks.jpg" alt="Italok"><span data-i18n="menu.categories.drinks">Italok</span></button>
       </div>
     </section>
 
     <section class="section contact-section" id="kapcsolat">
       <div class="wrap contact-grid">
         <div class="contact-card reveal">
-          <p class="eyebrow">Kapcsolat</p>
-          <h2>Gyors döntéshez rövid út.</h2>
+          <p class="eyebrow" data-i18n="contact.title">Kapcsolat</p>
+          <h2 data-i18n="contact.subtitle">Lépj velünk kapcsolatba, vagy tervezz meg egy gyors látogatást.</h2>
           <div class="contact-list">
-            <a href="tel:+36613146736"><span>Telefon</span><strong>0613146736</strong></a>
-            <a href="mailto:hanoixuarestaurant@gmail.com"><span>Email</span><strong>hanoixuarestaurant@gmail.com</strong></a>
-            <a href="https://maps.google.com/?q=Budapest%20Ern%C5%91%20utca%2030-34%201096" target="_blank" rel="noreferrer"><span>Cím</span><strong>Ernő utca 30-34, Budapest, 1096</strong></a>
-            <a href="https://linktr.ee/hanoixua" target="_blank" rel="noreferrer"><span>Linktree</span><strong>linktr.ee/hanoixua</strong></a>
+            <a href="https://maps.google.com/?q=Budapest%20Ern%C5%91%20utca%2030-34%201096" target="_blank" rel="noreferrer"><span data-i18n="contact.addressLabel">Cím</span><strong data-i18n="contact.addressValue">1096 Budapest, Ernő utca 30-34.</strong></a>
+            <a href="#kapcsolat"><span data-i18n="contact.hoursLabel">Nyitvatartás</span><strong data-i18n="contact.hoursValue">Minden nap 11:00 – 21:30</strong></a>
+            <a href="tel:+36613146736"><span data-i18n="contact.phoneLabel">Telefon</span><strong>+36 61 314 6736</strong></a>
+            <a href="mailto:hanoixuarestaurant@gmail.com"><span data-i18n="contact.emailLabel">Email</span><strong>hanoixuarestaurant@gmail.com</strong></a>
           </div>
           <div class="hero-actions">
-            <a class="button primary" href="tel:+36613146736">Hívás most</a>
-            <a class="button secondary" href="https://maps.google.com/?q=Budapest%20Ern%C5%91%20utca%2030-34%201096" target="_blank" rel="noreferrer">Google Maps</a>
+            <a class="button primary" href="tel:+36613146736" data-i18n="contact.cta1">Hívás most</a>
+            <a class="button secondary" href="https://maps.google.com/?q=Budapest%20Ern%C5%91%20utca%2030-34%201096" target="_blank" rel="noreferrer" data-i18n="contact.cta2">Útvonal</a>
+            <a class="button secondary" href="mailto:hanoixuarestaurant@gmail.com" data-i18n="contact.cta3">Email küldése</a>
           </div>
         </div>
         <div class="contact-visual reveal delay-1">
@@ -170,13 +180,26 @@
     </section>
   </main>
 
+  <footer class="footer">
+    <div class="wrap footer-grid">
+      <div>
+        <h3 data-i18n="footer.title">Hanoi Xua Étterem</h3>
+        <p data-i18n="footer.line1">Autentikus vietnámi ízek Budapest szívében.</p>
+      </div>
+      <div class="footer-meta">
+        <p data-i18n="footer.line2">Nyitva minden nap • Budapest</p>
+        <p data-i18n="footer.line3">Minden jog fenntartva.</p>
+      </div>
+    </div>
+  </footer>
+
   <div class="sticky-bar">
-    <a href="tel:+36613146736">Hívás</a>
-    <a href="https://maps.google.com/?q=Budapest%20Ern%C5%91%20utca%2030-34%201096" target="_blank" rel="noreferrer">Útvonal</a>
+    <a href="tel:+36613146736" data-i18n="contact.cta1">Hívás most</a>
+    <a href="https://maps.google.com/?q=Budapest%20Ern%C5%91%20utca%2030-34%201096" target="_blank" rel="noreferrer" data-i18n="contact.cta2">Útvonal</a>
   </div>
 
   <div class="lightbox" id="lightbox" aria-hidden="true">
-    <button class="lightbox-close" id="lightboxClose" aria-label="Bezárás">×</button>
+    <button class="lightbox-close" id="lightboxClose" aria-label="Bezárás" data-i18n-aria-label="ui.close">×</button>
     <div class="lightbox-inner">
       <p id="lightboxTitle"></p>
       <img id="lightboxImage" src="" alt="" />
